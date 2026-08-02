@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  hyper-prompt-router:
+    image: python:3.11-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: uvicorn service.main:app --host 0.0.0.0 --port 8000
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONPATH=/app
