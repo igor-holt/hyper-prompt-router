@@ -1,0 +1,10 @@
+jax>=0.4.20
+jaxlib>=0.4.20
+numpy>=1.26
+scipy>=1.11
+pydantic>=2.5
+fastapi>=0.109
+uvicorn>=0.27
+httpx>=0.26
+stripe>=8.0
+apify-client>=1.6
